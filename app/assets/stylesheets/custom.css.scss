@@ -1,0 +1,97 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+html {
+    overflow-y: scroll;
+}
+body {
+    padding-top: 60px;
+}
+section {
+    overflow: auto;
+}
+textarea {
+    resize: vertical;
+}
+.center {
+    text-align: center;
+    h1 {
+        margin-bottom: 10px;
+    }
+}
+
+.navbar{
+	background-color: #46A8E0;
+	border-color: #46A8E0;
+}
+
+.container .jumbotron {
+    border-radius: 6px;
+}
+
+
+/*
+Header CSS
+ */
+#logo {
+    float: left;
+    margin-right: 10px;
+    font-size: 1.7em;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    padding-top: 9px;
+    font-weight: bold;
+    &:hover {
+        color: white;
+        text-decoration: none;
+    }
+}
+/*
+Footer CSS
+ */
+footer {
+    margin-top: 45px;
+    padding-left: 15px;
+    padding-top: 5px;
+    border-top: 1px solid #eaeaea;
+    color: #777;
+    a {
+        color: #555;
+        &:hover {
+            color: #222;
+        }
+    }
+    small {
+        float: left;
+    }
+    ul {
+        float: right;
+        list-style: none;
+        margin-right: 15px;
+        li {
+            float: left;
+            margin-left: 15px;
+        }
+    }
+}
+
+
+/* mixins, variables, etc. */
+@mixin box_sizing {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* miscellaneous */
+.debug_dump {
+    clear: both;
+    float: left;
+    width: 100%;
+    margin-top: 45px;
+    @include box_sizing;
+}
+
+
+
