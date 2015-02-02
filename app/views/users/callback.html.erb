@@ -1,6 +1,9 @@
-<h1> Info </h1>
-<p> <%= @user.name %> </p>
-<p> <%= @user.email %> </p>
-<p> <%= @user.spotify_hash %> </p>
-<p> <%= @user.playlist_id %> </p>
-<p> <%= @user.room_code %> </p>
+<div class="row">
+	<div class="jumbotron center ">
+		<h1>That's it!</h1>
+		<h2>Your Room Code is...</h2>
+		<h1> <%= @user.room_code %> </h1>
+		<h3>Share this code with your attendees</h3>
+		<p>NOTE: DO NOT DELETE "OUNDEA" PLAYLIST</p>
+	</div>
+</div>
