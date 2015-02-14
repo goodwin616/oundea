@@ -1,0 +1,12 @@
+<% provide(:title, "Log in") %>
+<div class="row">
+	<div class="jumbotron center">
+		<h1>Log in!</h1>
+		<%= form_for(:session, url: login_path) do |f| %>
+		<%= f.label :room_code %>
+		<%= f.text_field :room_code, class: 'form-control' %>
+		<%= f.submit "Log in", class: "btn btn-primary" %>
+		<% end %>
+		<p>Want to start a party? <%= link_to "Sign in with Spotify!", 'auth/spotify' %></p>
+	</div>
+</div>

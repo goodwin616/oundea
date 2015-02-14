@@ -93,5 +93,12 @@ footer {
     @include box_sizing;
 }
 
+.form-control {
+  width:25%;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 20px auto 20px auto;
+}
+
 
 

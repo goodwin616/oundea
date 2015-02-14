@@ -1,0 +1,13 @@
+<% provide(:title, "Find your song") %>
+
+
+<div class="row">
+    <div class="jumbotron center">
+        <h1>Welcome to <%= current_user.name %>'s party!"</h1>
+        <%= form_for(:session, url: find_path) do |f| %>
+		<%= f.label :search, "Search by Song Title" %>
+		<%= f.search_field :search, class: 'form-control' %>
+		<%= f.submit "Find a song", class: "btn btn-primary" %>
+		<% end %>
+    </div>
+</div>

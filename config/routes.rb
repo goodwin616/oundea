@@ -1,6 +1,12 @@
 Rails.application.routes.draw do
   root 'static_pages#home'
   get '/auth/spotify/callback', to: 'users#callback'
+  resources:users
+  get 'login' => 'sessions#new'
+  post 'login' => 'sessions#create'
+  delete 'logout' => 'sessions#destroy'
+  post 'find' => 'sessions#find'
+  get 'search' => 'sessions#search'
 
 
   #get '/auth/spotify/callback' => 'host#new'
