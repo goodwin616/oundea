@@ -22,7 +22,7 @@ module Oundea
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
-    RSpotify::authenticate("941e67ac3eea40bfaeed052626a07c4a", "70083348e3d74733b08a016bfdff7c22")
+    RSpotify::authenticate("941e67ac3eea40bfaeed052626a07c4a", "############################")
 
   end
 end
