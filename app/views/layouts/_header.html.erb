@@ -4,7 +4,7 @@
 		<%= link_to "Oundea", root_path, id:'logo' %>
 		<ul class="nav navbar-nav navbar-right">
 			<% if logged_in? %>
-				<li><%= link_to "Leave the Party", logout_path, method:"delete" %></li>
+				<li><%= link_to "Leave the Party", logout_path, id:'leave', method:"delete" %></li>
 			<% end %>
 		</ul>
 	</nav>	

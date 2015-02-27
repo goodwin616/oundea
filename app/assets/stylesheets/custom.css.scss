@@ -43,7 +43,15 @@ Header CSS
     padding-top: 9px;
     font-weight: bold;
     &:hover {
-        color: white;
+        color: black;
+        text-decoration: none;
+    }
+}
+
+#leave {
+    color: white;
+    &:hover {
+        color: black;
         text-decoration: none;
     }
 }

@@ -6,7 +6,7 @@ module SessionsHelper
 
 	# Returns the current logged-in user (if any)
 	def current_user 
-		@current_user||= User.find_by(room_code: session[:room_code])
+		@current_user ||= User.find_by(room_code: session[:room_code])
 	end
 
 	#Returns true if the user is logged in

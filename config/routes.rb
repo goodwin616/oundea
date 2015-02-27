@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   delete 'logout' => 'sessions#destroy'
   post 'find' => 'sessions#find'
   get 'search' => 'sessions#search'
+  post 'add' => 'sessions#add'
 
 
   #get '/auth/spotify/callback' => 'host#new'
